@@ -39,7 +39,7 @@ function binarySearch(string, letter) {
 }
 
 let string = "aabeeeeeeffhhiiiimmooorsssssstttttttwww"
-let letter = "c"
+let letter = "i"
 console.log(`Does ${string} contain '${letter}'?`)
-console.log(stringIncludes(string, letter))
-// console.log(binarySearch(string, letter))
+// console.log(stringIncludes(string, letter))
+console.log(binarySearch(string, letter))
