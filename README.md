@@ -8,3 +8,11 @@
 node index.js
 ```
 ### in terminal
+
+<br>
+
+# Topics Covered
+
+- Big O
+- binary search
+- recursion introduction

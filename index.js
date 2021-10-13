@@ -1,4 +1,4 @@
-console.log("helo")
+// console.log("helo")
 
 // one by one
 function stringIncludes(string, letter){
@@ -40,6 +40,38 @@ function binarySearch(string, letter) {
 
 let string = "aabeeeeeeffhhiiiimmooorsssssstttttttwww"
 let letter = "i"
-console.log(`Does ${string} contain '${letter}'?`)
+// console.log(`Does ${string} contain '${letter}'?`)
 // console.log(stringIncludes(string, letter))
-console.log(binarySearch(string, letter))
+// console.log(binarySearch(string, letter))
+
+
+//Recursion 
+// Recursive functions are functions that call themselves.
+
+function sayDownFrom(n){
+	console.log(n)
+	if(n > 1){
+		sayDownFrom(n -1) // recursive call
+	} else {
+		return true // base case
+	}
+}
+
+// sayDownFrom(5)
+// 5
+// 4
+// 3
+// 2
+// 1
+
+// It needs a recursive call like on line 54 and a base case to end it like on line 56 so it doesn't loop forever
+
+function sumUpTo(n){
+	if(n > 1){
+		return sumUpTo(n - 1) + n
+	} else {
+		return 1;
+	}
+}
+
+console.log(sumUpTo(6))
